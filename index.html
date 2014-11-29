@@ -5,10 +5,10 @@
 <link rel="stylesheet" type="text/css" media="all" href="reset.css">
 <link rel="stylesheet" type="text/css" media="all" href="main.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script> -->
 <script src="main.js"></script>
 
-<!-- <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/> -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
 
 </head>
 
@@ -19,6 +19,7 @@
     </header>
 
     <div class="main-content">
+      <div id="commodity-name"></div>
 
       <div id="nutrition-facts">
       </div>
@@ -26,7 +27,7 @@
       <h1></h1>
 
       <form id="search-form" action="" method="GET">
-        <input id="input-field" type="text">
+        <input id="input-field" type="text" placeholder="Enter PLU or scan an item">
         <button id="search-button" name="search" type="submit" value="Search">Search</button>
       </form>
 
