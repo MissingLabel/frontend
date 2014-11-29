@@ -1,0 +1,259 @@
+/* * {
+        border: 1px dashed lightgrey;
+} */
+body {
+    position: relative;
+    font-size: 1em;
+    font-family: Arial, Sans-Serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    height: 600px;
+    background-color: lightgrey;
+    position: relative;
+/*    top: -50px;*/
+    top: 100px;
+
+}
+
+.logo {
+    font-size: 24px;
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 20px;
+    position: absolute;
+    top: -20px;
+}
+
+form {
+    position: relative;
+    top: 150px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+input[type="submit"] {
+    background-color: orangered;
+    border: none;
+     border-radius: 10px;
+    padding: 5px 15px;
+    text-shadow: 0.7px 0.7px 0.8px #f49797;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    background-color: #f2efef;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+    margin: 20px auto;
+
+}
+
+#nutrition-facts-label {
+    position: relative;
+    top: 100px;
+/*     left: 10%; */
+    margin: 10%;
+    display: none;
+    border: 3px solid black;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 8px 8px 35px #515050;
+    color: #565555;
+}
+
+#nutrition-facts-label h1 {
+    font-size: 2.0em;
+    font-weight: bold;
+    color: black;
+}
+
+#nutrition-facts-label h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+}
+
+#nutrition-facts-label h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+#nutrition-facts-label h4 {
+    font-size: 0.9em;
+    font-weight: bold;
+/*     color: black; */
+}
+
+#nutrition-facts-label h5 {
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-bottom: 3px;
+/*     color: black; */
+}
+
+#servings {
+    float: left;
+    padding-right: 3%;
+}
+
+#serving-size {
+    color: black;
+    float: right;
+}
+
+.serving-size-label {
+    display: inline-block;
+    float: left;
+}
+
+.large-label-border {
+    min-height: 15px;
+    padding-bottom: 6px;
+    border-bottom: 8px solid black;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.large-label-border-short {
+    min-height: 15px;
+    padding-bottom: 0;
+    border-bottom: 8px solid black;
+    width: 100%;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.medium-label-border {
+    min-height: 35px;
+    padding-bottom: 6px;
+    border-bottom: 4px solid black;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.medium-label-border-short {
+    min-height: 35px;
+    padding-bottom: 0;
+    border-bottom: 4px solid black;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.amount-per-serving {
+    clear: both;
+/*     float: left; */
+}
+
+.calories-label {
+    clear: left;
+    float: left;
+}
+
+#calories {
+   float: right;
+   position: relative;
+   top: -9px;
+}
+table {
+    width: 100%;
+    cellspacing: 0;
+    cellpadding: 0;
+}
+
+th {
+    colspan: 2;
+}
+
+td {
+    valign: middle;
+}
+
+th, td {
+    height: 30px;
+}
+
+.td-left, .td-left-bottom {
+/*     border: 1px solid black; */
+    display: block;
+    width: 15%;
+    float: left;
+    height: 1.2em;
+    padding: 2px;
+    border-top: 1px solid darkgrey;
+    border-right: 1px solid darkgrey;
+    padding-top: 4px;
+/*     color: black; */
+/*     text-align: right; */
+    padding-right: 5%;
+}
+
+.td-right, .td-right-bottom {
+/*      border: 1px solid black; */
+    border-top: 1px solid darkgrey;
+    width: 73%;
+    float: left;
+    height: 1.2em;
+/*     color: black; */
+    vertical-align: ;
+    padding-top: 4px;
+    padding-left: 5%;
+}
+
+.td-right span {
+    float: left;
+    padding-right: 3%;
+    font-weight: bold;
+    color: black;
+}
+
+#total-fat-percentage, #saturated-fat-percentage, #trans-fat-percentage, #cholesterol-percentage {
+    float: left;
+    font-weight: bold;
+    color: black;
+}
+
+#total-fat, #saturated-fat, #trans-fat {
+    float: left;
+}
+
+.td-indent p {
+/*     position: relative; */
+    float: left;
+/*     left: 8%; */
+    padding-left: 5%;
+    padding-right: 3%;
+    color: darkgrey;
+}
+
+.td-indent em {
+/*     Why do I need to force an em tag to italicize text? */
+    font-style: italic;
+}
+
+.added-sugars {
+    margin-left: 5%;
+}
+
+.td-right-bottom span {
+    font-weight: bold;
+}
+
+
+
+
+
+
