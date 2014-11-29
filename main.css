@@ -5,6 +5,13 @@ body {
     position: relative;
     font-size: 1em;
     font-family: Arial, Sans-Serif;
+    background-color: #768002;
+    background-image: url("images/missing-label-veggie-backdrop.jpg");
+    background-size: 300%;
+    background-position: center;
+    background-attachment: fixed;
+    background-origin: content-box;
+    background-repeat: none;
 }
 
 h1 {
@@ -12,30 +19,35 @@ h1 {
 }
 
 .container {
+    display: block;
     max-width: 600px;
     margin: 0 auto;
-    height: 600px;
-    background-color: lightgrey;
-    position: relative;
+    height: auto;
+/*     background-color: #768002; */
+/*     position: relative; */
 /*    top: -50px;*/
-    top: 100px;
+    top: -50px;
+/*     box-shadow: 2px 2px 15px black; */
+    padding-bottom: 150px;
 
 }
 
 .logo {
     font-size: 24px;
-    color: green;
+    color: #e4f05d;
     text-decoration: none;
     font-weight: bold;
     padding: 20px;
     margin-top: 20px;
     position: absolute;
-    top: -20px;
+    top: -70px;
+    text-shadow: 1px 0.7px 3px black;
+    letter-spacing: 0.04em;
 }
 
 form {
     position: relative;
-    top: 150px;
+    top: 125px;
     width: 90%;
     margin: 50px auto;
 }
@@ -43,21 +55,86 @@ form {
 input[type="submit"] {
     background-color: orangered;
     border: none;
-     border-radius: 10px;
+    border-radius: 10px;
     padding: 5px 15px;
     text-shadow: 0.7px 0.7px 0.8px #f49797;
     font-size: 0.9em;
     margin: 10px 0;
 }
 
+#search-button {
+    background-color: orange;
+    border: none;
+/*     border-radius: 10px; */
+/*     padding: 5px 15px; */
+    text-shadow: 0.7px 0.7px 1px #f2b90c;
+    font-size: 1em;
+    margin: 10px 0;
+    float: right;
+/*     box-shadow: 1.5px 3px 15px #484e01; */
+    background: #f2b90c;
+    background-image: -webkit-linear-gradient(top, #fcbf04, #d51e07);
+    background-image: -moz-linear-gradient(top, #fcbf04, #d51e07);
+    background-image: -ms-linear-gradient(top, #fcbf04, #d51e07);
+    background-image: -o-linear-gradient(top, #fcbf04, #d51e07);
+    background-image: linear-gradient(to bottom, #fd9b01, #d51e07);
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+/*   text-shadow: 1px 1px 3px #000000; */
+    text-shadow: 0.7px 0.7px 1px #cca9a9;
+    -webkit-box-shadow: 2px 3px 8px black;
+    -moz-box-shadow: 2px 3px 8px black;
+/*     box-shadow: 2px 2px 6px #484e01; */
+    box-shadow: 2px 3px 10px black;
+/*     font-family: Arial; */
+    color: black;
+/*   font-size: 17px; */
+    padding: 8px 20px 8px 20px;
+/*     text-decoration: none; */
+    letter-spacing: 0.02em;
+}
+
 input[type="text"] {
-    background-color: #f2efef;
+/*     background-color: #f2efef; */
+    background-color: #cdd386;
     border: none;
     border-radius: 5px;
-    height: 30px;
-    width: 100%;
+    height: 40px;
+    width: 97%;
     margin: 20px auto;
+    box-shadow: 3px 5px 25px black;
+    font-size: 1.2em;
+    padding-left: 3%;
+    color: #484e01;
+}
 
+::-webkit-input-placeholder {
+   color: #9da354;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #9da354;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #9da354;
+}
+
+:-ms-input-placeholder {
+   color: #9da354;
+}
+
+#commodity-name {
+    position: relative;
+    margin-left: 10%;
+    top: 125px;
+    font-size: 24px;
+    font-weight: bold;
+/*     color: #5c6402; */
+    color: #363b00;
+    text-shadow: 1px 0.7px 1px #9ca535;
+    letter-spacing: 0.04em;
 }
 
 #nutrition-facts-label {
@@ -69,7 +146,7 @@ input[type="text"] {
     border: 3px solid black;
     padding: 10px;
     background-color: white;
-    box-shadow: 8px 8px 35px #515050;
+    box-shadow: 8px 8px 35px black;
     color: #565555;
 }
 
@@ -236,7 +313,7 @@ th, td {
 /*     left: 8%; */
     padding-left: 5%;
     padding-right: 3%;
-    color: darkgrey;
+    color: #565555;
 }
 
 .td-indent em {
@@ -252,7 +329,13 @@ th, td {
     font-weight: bold;
 }
 
-
+textarea:focus, #search-button:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+/* border-color: rgba(126, 239, 104, 0.8); */
+/* border-color: rgba(203, 220, 1, 0.8); */
+border-color: rgba(220, 11, 1, 0.8);
+/* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6); */
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(203, 220, 1, 0.6);
+outline: 0 none;}
 
 
 
