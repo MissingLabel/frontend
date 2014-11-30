@@ -297,13 +297,13 @@ th, td {
     color: black;
 }
 
-#total-fat-percentage, #saturated-fat-percentage, #trans-fat-percentage, #cholesterol-percentage {
+#total-fat-percentage, #sodium-percentage, #total-carbs-percentage, #dietary-fiber-percentage, #sugar-percentage, #added-sugar-percentage, #protein-percentage, #saturated-fat-percentage, #trans-fat-percentage, #cholesterol-percentage {
     float: left;
     font-weight: bold;
     color: black;
 }
 
-#total-fat, #saturated-fat, #trans-fat {
+#total-fat, #saturated-fat, #trans-fat, #cholesterol, #sodium, #total-carbs, #dietary-fiber, #sugar, #added-sugars, #protein {
     float: left;
 }
 
@@ -327,6 +327,22 @@ th, td {
 
 .td-right-bottom span {
     font-weight: bold;
+    float: left;
+    padding-right: 3%;
+}
+
+#item-name {
+    font-weight: bold;
+    float: left;
+    padding-right: 3%;
+}
+
+#item-qty {
+    float: left;
+}
+
+#item-unit {
+    display: inline-block;
 }
 
 textarea:focus, #search-button:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
