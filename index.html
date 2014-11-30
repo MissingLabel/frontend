@@ -34,7 +34,7 @@
       <div id="nutrition-facts-label">
         <h1 class="nutrition-facts">Nutrition Facts</h1>
         <hr>
-        <h3><div id="servings">8</div>servings</h3>
+        <h3><div id="servings">1</div>serving</h3>
         <div class="large-label-border">
           <p class="serving-size-label">Serving size<p id="serving-size">1</p></p>
         </div>
@@ -48,66 +48,69 @@
           <table>
             <tr>
               <td class="td-left"><div id="total-fat-percentage">12</div>%</td>
-              <td class="td-right"><span>Total Fat </span><div id="total-fat">8</div>g</td>
+              <td class="td-right"><span>Total Fat </span><div id="total-fat">8</div><div id="total-fat-unit"></div></td>
             </tr>
             <tr>
-              <td class="td-left"><div id="saturated-fat-percentage">5</div>%</td>
-              <td class="td-right td-indent"><p>Saturated Fat </p><div id="saturated-fat">1</div>g</td>
+              <td class="td-left"><div id="saturated-fat-percentage">0</div>%</td>
+              <td class="td-right td-indent"><p>Saturated Fat </p><div id="saturated-fat">0</div><div id="saturated-fat-unit">g</div></td>
             </tr>
             <tr>
               <td class="td-left"><div id="trans-fat-percentage"></div></td>
-              <td class="td-right td-indent"><p><em>Trans</em> Fat </p><div id="trans-fat">1</div>g</td>
+              <td class="td-right td-indent"><p><em>Trans</em> Fat </p><div id="trans-fat">0</div><div id="trans-fat-unit">g</div></td>
             </tr>
             <tr>
               <td class="td-left"><div id="cholesterol-percentage">0</div>%</td>
-              <td class="td-right"><span>Cholesterol </span><div id="total-fat">0</div>mg</td>
+              <td class="td-right"><span>Cholesterol </span><div id="cholesterol">0</div><div id="cholesterol-unit">g</div></td>
             </tr>
             <tr>
-              <td class="td-left"><div id="cholesterol-percentage">7</div>%</td>
-              <td class="td-right"><span>Sodium </span><div id="total-fat">160</div>mg</td>
+              <td class="td-left"><div id="sodium-percentage">7</div>%</td>
+              <td class="td-right"><span>Sodium </span><div id="sodium">160</div><div id="sodium-unit">mg</div></td>
             </tr>
             <tr>
-              <td class="td-left"><div id="cholesterol-percentage">12</div>%</td>
-              <td class="td-right"><span>Total Carbs </span><div id="total-fat">37</div>g</td>
+              <td class="td-left"><div id="total-carbs-percentage">12</div>%</td>
+              <td class="td-right"><span>Total Carbs </span><div id="total-carbs">37</div><div id="total-carbs-unit">g</div></td>
             </tr>
             <tr>
-              <td class="td-left"><div id="saturated-fat-percentage">14</div>%</td>
-              <td class="td-right td-indent"><p>Dietary Fiber </p><div id="saturated-fat">4</div>g</td>
+              <td class="td-left"><div id="dietary-fiber-percentage">14</div>%</td>
+              <td class="td-right td-indent"><p>Dietary Fiber </p><div id="dietary-fiber">4</div><div id="dietary-fiber-unit">g</div></td>
             </tr>
             <tr>
-              <td class="td-left"><div id="saturated-fat-percentage"></div></td>
-              <td class="td-right td-indent"><p>Sugars </p><div id="saturated-fat">1</div>g</td>
+              <td class="td-left"><div id="sugar-percentage"></div></td>
+              <td class="td-right td-indent"><p>Sugars </p><div id="sugar">1</div><div id="sugar-unit">g</div></td>
             </tr>
             <tr>
-              <td class="td-left"><div id="saturated-fat-percentage"></div></td>
-              <td class="td-right td-indent"><p class="added-sugars">Added Sugars </p><div id="saturated-fat">0</div>g</td>
+              <td class="td-left"><div id="added-sugar-percentage"></div></td>
+              <td class="td-right td-indent"><p class="added-sugars">Added Sugars </p><div id="saturated-fat">0</div><div id="added-sugar-unit">g</div></td>
             </tr>
             <tr>
-              <td class="td-left"><div id="cholesterol-percentage">12</div>%</td>
-              <td class="td-right"><span>Protein </span><div id="total-fat">3</div>g</td>
+              <td class="td-left"><div id="protein-percentage">12</div>%</td>
+              <td class="td-right"><span>Protein </span><div id="protein">3</div><div id="protein-unit">g</div></td>
             </tr>
 
 
           </table>
         </div>
         <div class="medium-label-border-short">
-          <table>
-            <tr>
-              <td class="td-left-bottom">10%</td>
-              <td class="td-right-bottom"><span>Vitamin D </span>2 mcg</td>
-            </tr>
-            <tr>
-              <td class="td-left-bottom">20%</td>
-              <td class="td-right-bottom"><span>Calcium </span>260 mg</td>
-            </tr>
-            <tr>
-              <td class="td-left-bottom">45%</td>
-              <td class="td-right-bottom"><span>Iron </span>8 mg</td>
-            </tr>
-            <tr>
-              <td class="td-left-bottom">5%</td>
-              <td class="td-right-bottom"><span>Potassium </span>235 mg</td>
-            </tr>
+
+          <table id="nutrition-lower-table">
+            <tbody>
+
+           <!--  <tr>
+
+              <td id="item-percentage" class="td-left-bottom">
+              </td>
+
+              <td class="td-right-bottom">
+                <span id="item-name"></span>
+                &nbsp;
+                <div id="item-qty"></div>
+                &nbsp;
+                <div id="item-unit"></div>
+              </td>
+
+            </tr> -->
+
+            </tbody>
           </table>
         </div>
 
