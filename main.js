@@ -1,4 +1,5 @@
 function makeTemplateProcessor($){
+
   function showPage(page){
       $("#search-form").css("display", "none");
       $("#nutrition-facts-label").css("display", "none");
@@ -6,7 +7,7 @@ function makeTemplateProcessor($){
       $("#create-form").css("display", "none");
       $("#location-data").css("display", "none");
       $("#" + page).css("display", "block");
-  }
+  };
 
   function showNutritionalData(data) {
       showPage("nutrition-facts-label");
@@ -43,11 +44,28 @@ function makeTemplateProcessor($){
                         +data.lower_label[i].units.toString()+
                         "</div></td></tr>"
 
-        $("#nutrition-lower-table tbody").append(tableDiv);
-    }
+          $("#nutrition-lower-table tbody").append(tableDiv);
+        };
   }
 
+  function showLocationTemplate(data) {
+    showPage("location-data");
+
+    _.templateSettings.variable = "locationData";
+
+    var locationTemplate = _.template(
+      $("#location-template").html()
+    );
+
+    var locationData = data;
+
+    $("#location-data").html(
+      locationTemplate(locationData)
+    )};
+// };
+
   return {
+    showLocationTemplate: showLocationTemplate,
     showNutritionalData: showNutritionalData,
     showPage: showPage
   };
@@ -125,6 +143,9 @@ $(document).ready(function(){
 
   $("#search-button").click(function(e){
     e.preventDefault();
+
+    // showPage("nutrition-facts-label");
+    // $("#nutrition-facts-label").css("display", "block");
     var input = $("#input-field").val();
     console.log(input);
     var request = $.ajax({
@@ -134,9 +155,13 @@ $(document).ready(function(){
     })
 
     request.done( function(response){
+      $("body").css("background-image", "none");
+      $("#search-form").css("display", "none");
+      // $("#nutrition-facts-label").css("display", "block");
       console.log(response);
+      console.log("hello");
       currentProductData = response;
-      viewTemplating.showNutrionalData(currentProductData);
+      viewTemplating.showNutritionalData(currentProductData);
     });
   });
 
@@ -145,21 +170,11 @@ $(document).ready(function(){
   $("#left-button").click(function(e){
     e.preventDefault();
     $("#nutrition-facts-label").css("display", "none");
+    $("#left-button").css("display", "none");
+    console.log(currentProductData);
+    viewTemplating.showLocationTemplate(currentProductData);
 
     // var commodityName = response.name;
-
-    _.templateSettings.variable = "locationData";
-
-    var locationTemplate = _.template(
-      $("#location-template").html()
-    );
-
-    var locationData = currentProductData;
-
-    $("#location-data").html(
-      locationTemplate( locationData )
-    );
-
   });
 
   $("#right-button").click(function(e){
